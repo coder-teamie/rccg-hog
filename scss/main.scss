@@ -1,2 +1,42 @@
 @import './resets';
+@import './variables';
 @import './config';
+@import './navigation';
+
+.hero {
+  height: 60vh;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url('/images/hero-1.jpg') center/cover no-repeat;
+  color: $clr-white;
+  font-size: 3rem;
+  display: grid;
+  place-items: center;
+  line-height: 1;
+  font-family: $ff-headingFont;
+
+  span {
+    color: $clr-special;
+    font-family: $ff-secondary;
+    font-weight: bold;
+    font-size: 4.5rem;
+    padding: 0.1em 0.1em;
+    text-shadow: -2px 3px 3px $clr-white;
+  }
+
+  .hero-btn {
+    margin-top: 3em;
+    padding: 1.2em 1.5em;
+    font-size: 1rem;
+    font-weight: 600;
+    font-family: $ff-headingFont;
+    background: $clr-special;
+    text-transform: uppercase;
+  }
+
+  .hero-btn:hover {
+    background: $clr-special-2;
+    color: $clr-body;
+  }
+}
+
+@import './responsive';
