@@ -18,7 +18,7 @@ This is the intended website for The Redeemed Christian Church of God (RCCG) Hou
 - Live Site URL: [Netlify](https://rccghog.netlify.app/)
 
 ## My process
-
+Started the development by building the entire navigation - Developed the mobile layout for the nav and then moved on to the tablet/desktop layout. 
 
 ### Built with
 
