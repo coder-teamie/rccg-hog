@@ -1,0 +1,26 @@
+section {
+  max-width: $maxWidth;
+  min-height: 70vh;
+  height: 100%;
+  margin-top: 3em;
+  padding: 1em 1.5em;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.intro-section {
+  .section-header {
+    h2 {
+      color: $clr-special;
+      font-family: $ff-sections;
+      font-weight: bold;
+      font-size: 3rem;
+      margin-top: 0;
+    }
+  }
+
+  .intro-text {
+    max-width: 25rem;
+    line-height: 2;
+  }
+}

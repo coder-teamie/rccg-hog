@@ -16,10 +16,9 @@
 
   span {
     color: $clr-special;
-    font-family: $ff-secondary;
-    font-weight: bold;
+    font-family: $ff-sections;
+    font-weight: 700;
     font-size: 4.5rem;
-    padding: 0.1em 0.1em;
     text-shadow: -2px 3px 3px $clr-white;
   }
 
@@ -39,4 +38,5 @@
   }
 }
 
+@import './secions';
 @import './responsive';

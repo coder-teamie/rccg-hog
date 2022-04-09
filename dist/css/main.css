@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Grape+Nuts&family=Lora:wght@400;500;700&family=Ubuntu:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Caveat:wght@400;600&family=Grape+Nuts&family=Lora:wght@400;500;700&family=Ubuntu:wght@400;700&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -114,17 +114,21 @@ ul {
   grid-template-columns: 1fr;
   align-items: center;
   gap: 2rem;
+  padding: 1em 1.7em;
+  background: white;
+  z-index: 9;
+  transform: translateX(-100%);
+  transition: all 300ms linear;
 }
 
 .nav .social-icons {
   gap: 1rem;
-  display: none;
-  transform: translateX(-100%);
+  display: flex;
 }
 
 .nav .social-icons a {
   color: #950951;
-  font-size: 1.2rem;
+  font-size: 1.5rem;
 }
 
 .nav .social-icons li {
@@ -136,7 +140,6 @@ ul {
 }
 
 .nav .nav-links {
-  transform: translateX(-100%);
   transition: all 300ms linear;
   background: white;
   z-index: 2;
@@ -151,7 +154,7 @@ ul {
   font-family: "Ubuntu", sans-serif;
   transition: all 300ms linear;
   letter-spacing: 1px;
-  padding: 0.5em 1.5em;
+  padding: 0.5em 0;
 }
 
 .nav .nav-links a:hover {
@@ -178,10 +181,9 @@ ul {
 
 .hero span {
   color: #950951;
-  font-family: "Grape Nuts", cursive;
-  font-weight: bold;
+  font-family: "Caveat", cursive;
+  font-weight: 700;
   font-size: 4.5rem;
-  padding: 0.1em 0.1em;
   text-shadow: -2px 3px 3px white;
 }
 
@@ -200,6 +202,29 @@ ul {
   color: #080808;
 }
 
+section {
+  max-width: 1200px;
+  min-height: 70vh;
+  height: 100%;
+  margin-top: 3em;
+  padding: 1em 1.5em;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.intro-section .section-header h2 {
+  color: #950951;
+  font-family: "Caveat", cursive;
+  font-weight: bold;
+  font-size: 3rem;
+  margin-top: 0;
+}
+
+.intro-section .intro-text {
+  max-width: 25rem;
+  line-height: 2;
+}
+
 @media screen and (min-width: 850px) {
   .nav {
     grid-template-columns: auto 1fr;
@@ -211,7 +236,6 @@ ul {
     height: 5rem;
     display: flex;
     justify-content: space-between;
-    padding: 0.5em 1em;
   }
   .nav .nav-header .nav-toggle {
     display: none;
@@ -219,7 +243,6 @@ ul {
   .nav .nav-links {
     display: flex;
     gap: 1rem;
-    transform: translate(0);
     margin-top: 0;
     justify-self: end;
     align-items: center;
@@ -242,9 +265,21 @@ ul {
   }
   .nav .links-container {
     grid-template-columns: 1fr auto;
+    transform: translate(0);
   }
   .nav .social-icons {
     display: flex;
     transform: translate(0);
+  }
+  .hero {
+    font-size: 3.5rem;
+    line-height: 0.9;
+  }
+  .hero span {
+    font-size: 4.7rem;
+  }
+  .hero .hero-btn {
+    padding: 1.2em 1.5em;
+    font-size: 1.15rem;
   }
 }
