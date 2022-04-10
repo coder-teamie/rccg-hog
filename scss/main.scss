@@ -8,17 +8,18 @@
   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
     url('/images/hero-1.jpg') center/cover no-repeat;
   color: $clr-white;
-  font-size: 3rem;
+  font-size: 2.5rem;
   display: grid;
   place-items: center;
   line-height: 1;
   font-family: $ff-headingFont;
+  padding: 0 0.3em;
 
   span {
     color: $clr-special;
     font-family: $ff-sections;
     font-weight: 700;
-    font-size: 4.5rem;
+    font-size: 4.2rem;
     text-shadow: -2px 3px 3px $clr-white;
   }
 
@@ -38,5 +39,5 @@
   }
 }
 
-@import './secions';
+@import './sections';
 @import './responsive';

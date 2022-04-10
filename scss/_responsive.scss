@@ -1,4 +1,8 @@
 @include tablet {
+  .container {
+    max-width: $maxWidth;
+  }
+
   .nav {
     grid-template-columns: auto 1fr;
     align-items: center;
@@ -63,6 +67,104 @@
     .hero-btn {
       padding: 1.2em 1.5em;
       font-size: 1.15rem;
+    }
+  }
+
+  .intro-section {
+    margin-top: 3em;
+    margin-bottom: 0;
+    height: 15em;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 1em;
+
+    h2 {
+      margin-top: 0;
+    }
+    .intro-text {
+      max-width: 30rem;
+    }
+  }
+
+  // ** || Weekly Gathering || **
+
+  .weekly-gathering {
+    padding: 0.2em 0.4em;
+    max-width: $tabletMaxWidth;
+    h2 {
+      margin-top: 0.4em;
+    }
+
+    .weekly-text h2 {
+      margin-top: 0.7em;
+    }
+  }
+
+  // ** || Time well Spent || **
+
+  .time-well-spent {
+    max-width: 70rem;
+    padding: 1em 3em;
+    height: 60vh;
+
+    .text-container {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: flex-start;
+      width: 65%;
+      height: 100%;
+      max-width: 40rem;
+      p {
+        max-width: 20rem;
+      }
+
+      h2 {
+        margin-top: 0;
+      }
+
+      h2,
+      p {
+        margin-left: 3rem;
+      }
+    }
+
+    .img-container {
+      position: absolute;
+      top: 5.6rem;
+      left: 50%;
+      height: 25rem;
+      width: 25rem;
+
+      img {
+        display: block;
+      }
+    }
+
+    .img-container::after {
+      content: '';
+      outline: 5px solid $clr-special-2;
+      outline-offset: 7px;
+      position: absolute;
+      height: 100%;
+      width: 100%;
+      top: 0;
+      left: 0;
+    }
+  }
+}
+
+@include responsive_fix {
+  .time-well-spent {
+    .img-container {
+      width: 26rem;
+    }
+  }
+}
+
+@include desktop {
+  .time-well-spent {
+    .img-container {
+      width: 35rem;
     }
   }
 }
