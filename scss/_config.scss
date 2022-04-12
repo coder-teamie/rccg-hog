@@ -76,6 +76,7 @@ img:not(.nav-logo) {
 .container {
   max-width: $tabletMaxWidth;
   margin: 0 auto;
+  padding: 0 1.5rem;
 }
 
 @mixin tablet {
