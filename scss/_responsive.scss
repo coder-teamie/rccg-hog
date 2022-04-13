@@ -129,7 +129,7 @@
   .time-well-spent {
     max-width: 70rem;
     padding: 1em 2em;
-    height: 60vh;
+    height: 53vh;
 
     .text-container {
       display: flex;
@@ -178,6 +178,36 @@
     }
   }
 
+  // ** || Events || **
+  .events {
+    .events-container {
+      column-gap: 1.5rem;
+      grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    }
+
+    .event {
+      .img-container {
+        height: 12rem;
+      }
+
+      &-info {
+        h3 {
+          font-size: 1.2rem;
+          margin-bottom: 0.5em;
+        }
+        p {
+          font-size: 0.9rem;
+        }
+      }
+
+      .event-footer {
+        a {
+          border-bottom: 0.1em dotted $clr-white;
+        }
+      }
+    }
+  }
+
   // ** Directions **
 
   .directions {
@@ -199,6 +229,14 @@
   .time-well-spent {
     .img-container {
       width: 35rem;
+    }
+  }
+
+  // Events
+  .events {
+    .events-container {
+      column-gap: 1.5rem;
+      grid-template-columns: repeat(auto-fill, minmax(270px, 1fr));
     }
   }
 }

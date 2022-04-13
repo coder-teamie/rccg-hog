@@ -6,5 +6,6 @@ navToggle.addEventListener('click', () => {
   linksContainer.classList.toggle('show-links');
 });
 
-const date = (document.getElementById('date').innerHTML =
-  new Date().getFullYear());
+const dates = document
+  .querySelectorAll('.date')
+  .forEach((date) => (date.innerHTML = new Date().getFullYear()));
