@@ -234,6 +234,37 @@ footer .footer-container .site-author {
   text-decoration: underline;
 }
 
+.about-hero {
+  height: 30vh;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("/images/abous-us.jpg") center/cover no-repeat;
+  background-attachment: fixed;
+  background-position-y: -190px;
+  object-position: top;
+}
+
+.about-hero .hero-text {
+  text-transform: uppercase;
+  font-weight: 600;
+  font-family: "Ubuntu", sans-serif;
+  font-size: 3rem;
+}
+
+section.about-us {
+  min-height: 45 vh;
+  height: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+section.about-us p {
+  max-width: 30rem;
+  margin-bottom: 1.5rem;
+  letter-spacing: 0.5px;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 section {
   max-width: 75rem;
   min-height: 50vh;
