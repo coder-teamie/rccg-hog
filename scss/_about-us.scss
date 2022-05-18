@@ -15,10 +15,13 @@
 }
 
 section.about-us {
-  min-height: 45 vh;
-  height: 100%;
   margin-left: auto;
   margin-right: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin-bottom: 2em;
 
   p {
     max-width: 30rem;
@@ -28,4 +31,19 @@ section.about-us {
     margin-left: auto;
     margin-right: auto;
   }
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .about-img-container {
+    height: auto;
+    width: 20rem;
+    justify-self: center;
+  }
+}
+
+.pastor-in-charge {
+  font-weight: 600;
 }

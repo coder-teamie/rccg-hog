@@ -50,6 +50,11 @@
         border-radius: $borderRadius;
         color: $clr-white;
       }
+      .donate-btn:hover {
+        padding: 0.6em 1em;
+        background: $clr-special-2;
+        color: $clr-body;
+      }
     }
 
     .links-container {
@@ -65,16 +70,25 @@
   // ** || Hero || **
 
   .hero {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+      url('/images/hero-1.jpg') center/cover no-repeat;
+    background-attachment: fixed;
+    background-position-y: -190px;
+    object-position: top;
     font-size: 3.5rem;
     line-height: 0.9;
 
     span {
       font-size: 4.7rem;
+      color: $clr-special;
+      text-shadow: -2px 3px 3px $clr-white;
     }
 
     .hero-btn {
       padding: 1.2em 1.5em;
       font-size: 1.15rem;
+      background: $clr-special;
+      color: $clr-white;
     }
   }
 
@@ -214,6 +228,22 @@
     width: 800px;
     padding: 1em 3em;
     margin-bottom: 4em;
+  }
+
+  // ** About Page **
+
+  .about-hero {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+      url('/images/abous-us.jpg') center/cover no-repeat;
+    background-attachment: fixed;
+    background-position-y: -190px;
+    object-position: top;
+  }
+  Section.about-us {
+    height: calc(100vh - 12rem - 30vh);
+    column-gap: 2rem;
+    flex-direction: row;
+    margin: 0 auto;
   }
 }
 
