@@ -239,7 +239,7 @@ footer .footer-container .site-author {
 
 .about-hero {
   height: 30vh;
-  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("./images/abous-us.jpg") center/cover no-repeat;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../../images/abous-us.jpg") center/cover no-repeat;
   background-attachment: fixed;
   background-position-y: -190px;
   object-position: top;
